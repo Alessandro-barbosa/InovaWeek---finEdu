@@ -1,2 +1,2 @@
-# InovaWeek---finEdu
+# InovaWeek-finEdu
 Projeto para o inovaweek
