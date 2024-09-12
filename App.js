@@ -7,6 +7,7 @@ import RegisterPage from "./src/pages/RegisterPage";
 import { NavigationContainer } from "@react-navigation/native";
 import HomePage from "./src/pages/HomePage";
 import ExercisePage from "./src/pages/ExercisePage"
+import ResultPage from "./src/pages/ResultPage";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,7 @@ export default function App() {
         />
         <Stack.Screen name="HomePage" component={HomePage}/>
         <Stack.Screen name="ExercisePage" component={ExercisePage}/>
+        <Stack.Screen name="ResultPage" component={ResultPage}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

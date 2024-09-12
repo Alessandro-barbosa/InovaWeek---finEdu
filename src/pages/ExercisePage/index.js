@@ -3,8 +3,11 @@ import styles from "./styles";
 import { Link } from "@react-navigation/native";
 import { LinearGradient } from 'expo-linear-gradient';
 import HomePage from "../HomePage";
+import RadioComponent from "../components/RadioButton/RadioButton";
+import { useNavigation } from '@react-navigation/native';
 
 export default function ExercisePage(){
+  const navigation = useNavigation();
     return(
     <View style={styles.container}>
       <LinearGradient colors={['#F69100', '#FFE8CD', '#F69100']} style={styles.background}/>
@@ -22,28 +25,13 @@ export default function ExercisePage(){
 Dica: Pense quantas vezes o valor que João precisa juntar (R$ 15) é maior que o valor que ele junta por semana (R$ 2).</Text>
           </View>
           <View style={styles.questoes}>
-            <View>
-              <View style={styles.alternativas}>
-                <Image source={require("../../../assets/butao.png")} style={styles.botoes}/>
-                <Text style={styles.textoQuestoes}>25 semanas.</Text>
-              </View>
-              <View style={styles.alternativas}>
-                <Image source={require("../../../assets/butao.png")} style={styles.botoes}/>
-                <Text style={styles.textoQuestoes}>1 semana.</Text>
-              </View>
-              <View style={styles.alternativas}>
-                <Image source={require("../../../assets/radio_button_checked.png")} style={styles.botoes}/>
-                <Text style={styles.textoQuestoes}>2,5 semanas.</Text>
-              </View>
-              <View style={styles.alternativas}>
-                <Image source={require("../../../assets/butao.png")} style={styles.botoes}/>
-                <Text style={styles.textoQuestoes}>10 semanas.</Text>
-              </View>
-            </View>
+            <RadioComponent></RadioComponent>
           </View>
           <View style={styles.confirmar}>
-            <TouchableOpacity>Confirmar</TouchableOpacity>
-          </View>
+      <TouchableOpacity onPress={() => navigation.navigate('ResultPage')}>
+        <Text style={styles.buttonText}>Confirmar</Text>
+      </TouchableOpacity>
+    </View>
       </View>
     </View>
     );

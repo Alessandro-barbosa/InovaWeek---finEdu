@@ -24,11 +24,10 @@ export default function HomePage() {
               <Text style={styles.textoContainers}>Treine seus conhecimentos com quiz</Text>
             </View>
           </View>
-          
         <View style={styles.miniCotainer1}>
           <Image source={require("../../../assets/thinking.png")} style={styles.icones}/>
           <View>
-            <Text style={styles.tituloContainers}>Treinamento</Text>
+            <Text style={styles.tituloContainers}>Básico</Text>
             <Text style={styles.textoContainers}>Relembre conceitos básicos</Text>
           </View>
         </View>
@@ -36,7 +35,7 @@ export default function HomePage() {
         <View style={styles.miniCotainer1}>
           <Image source={require("../../../assets/atividades.png")} style={styles.icones}/>
           <View>
-            <Text style={styles.tituloContainers}>Treinamento</Text>
+            <Text style={styles.tituloContainers}>Atividades Diárias</Text>
             <Text style={styles.textoContainers}>Atividades diárias</Text>
           </View>
         </View>

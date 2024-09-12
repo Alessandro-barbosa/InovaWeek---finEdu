@@ -5,37 +5,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#DBDFEA",
     width: "100%",
     height: "100%",
-    // alignItems: "center",
-    // justifyContent: "center",
-  },
-  input: {
-    width: "75%",
-    height: "50px",
-    backgroundColor: "#D5B4B4",
-    padding: "10px",
-    fontSize: "20px",
-    opacity: "0.9",
-    border: "1px solid #867070",
-    borderRadius: "5px",
-    marginBottom: "5px",
-  },
-  btn: {
-    backgroundColor: "#A8D1D1",
-    height: "40px",
-    width: "75%",
-    borderRadius: "5px",
-    alignItems: "center",
-    justifyContent: "center",
-    marginBottom: "10px",
-  },
-  btnTxt: {
-    fontSize: "22px",
-  },
-  viewLinks: {
-    flexDirection: "row",
-    width: "75%",
-    justifyContent: "space-between",
-    marginTop: "15px",
   },
 
   containerTop: {
@@ -50,22 +19,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
-  textoHeaderTop: {
-    fontSize: "18pt",
-    fontWeight: "bold",
-  },
-
   containerDown: {
     alignItems: "center",
     justifyContent: "center",
     paddingTop: "20px",
-  },
-
-  grafico: {
-    width: "200px",
-    height: "200px",
-    marginBottom: "20px",
-    borderRadius: "100%",
   },
 
   miniCotainer1: {
@@ -79,18 +36,11 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
   },
 
-  sombra:
-  {
+  sombra:{
     shadowColor: "black",
     shadowOffset: {width: 1, height: 4},
     shadowOpacity: 0.4,
     shadowRadius: 9,
-  },
-
-
-  textoTopo: {
-    fontSize: "60pt",
-    fontWeight: "bold",
   },
 
   background: {
@@ -106,11 +56,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     height: "90%",
     width: "100%",
-  },
-
-  icones: {
-    height: "40px",
-    width: "40px",
   },
 
   textoContainers: {
@@ -135,26 +80,9 @@ const styles = StyleSheet.create({
     marginTop: "8px",
   },
 
-  questoes: {
-    height: "auto",
-    width: "350px",
-    marginTop: "40px"
-  },
-
-  botoes: {
-    width: "20px",
-    height: "20px",
-  },
-
   alternativas: {
-    flexDirection: "row",
     marginBottom: "24px",
     alignItems: "center",
-  },
-  
-  textoQuestoes: {
-    fontSize: "18px",
-    marginLeft: "8px",
   },
 
   confirmar: {
@@ -164,8 +92,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     height: "30px",
+    fontSize: "18px",
   },
-  
 });
 
 export default styles;

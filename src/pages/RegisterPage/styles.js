@@ -4,8 +4,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#DBDFEA",
     width: "100%",
-    height: "100%",
-    // alignItems: "center",
+    height: "100%",    
     // justifyContent: "center",
   },
   input: {
@@ -39,7 +38,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginTop: "15px",
   },
-
 
   containerTop: {
     width: "100%",
