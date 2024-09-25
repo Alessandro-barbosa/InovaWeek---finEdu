@@ -2,8 +2,10 @@ import { Image, TextInput, View, TouchableOpacity, Text } from "react-native";
 import styles from "./styles";
 import { Link } from "@react-navigation/native";
 import { LinearGradient } from 'expo-linear-gradient';
+import { useNavigation } from '@react-navigation/native';
 
 export default function LoginPage() {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <LinearGradient start={{ x: 0.5, y: 0 }} end={{ x: 0.5, y: 1 }} colors={['#F69100', '#FFE8CD', '#F69100']} style={styles.background}/>
@@ -18,11 +20,10 @@ export default function LoginPage() {
         <Text style={styles.welcomeText}>Bem Vindo!</Text>
         <TextInput placeholder="Email" style={styles.input} />
         <TextInput placeholder="Senha" style={styles.input} />
-        <TouchableOpacity style={styles.btn}>
-          <Link to={{ screen: "HomePage" }}>
-            <Text style={styles.btnTxt}>Login</Text>
-          </Link>
+        <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate("HomePage")}>
+          <Text style={styles.btnTxt}>Login</Text>
         </TouchableOpacity>
+
         <View style={styles.viewLinks}>
           <Link to={{ screen: "ForgotPasswordPage" }}>Esqueceu a senha? </Link>
           <Link to={{ screen: "RegisterPage" }}>Cadastre-se </Link>

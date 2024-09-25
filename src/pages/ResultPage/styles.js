@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
     height: "100%",
   },
 
+  
   containerTop: {
     width: "100%",
     height: "12%",
@@ -30,14 +31,23 @@ const styles = StyleSheet.create({
     marginBottom: "10px",
   },
 
-  resultadosStyle:{
+  resultadosStyle: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#E3DADA",
-    height: "48px",
-    width: "304px",
-    borderRadius: "10px",
-    marginBottom: "10px",
+    backgroundColor: "#F5F3F3",
+    height: 48,
+    width: 304,
+    borderRadius: 10,
+    marginBottom: 10,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0, 
+      height: 4,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 4.65,
+  
+    elevation: 8, 
   },
 
   resultadoLogos: {
@@ -55,6 +65,9 @@ const styles = StyleSheet.create({
     height: "100%",
   },
 
+  buttonText: {
+    fontSize: "18px",
+  },
   retangulo: {
     marginTop: "45px",
     position: 'absolute',
@@ -76,15 +89,18 @@ const styles = StyleSheet.create({
     marginTop: "8px",
   },
 
-  confirmar: {
-    backgroundColor: "orange",
-    borderRadius: "5px",
-    width: "100px",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "30px",
-    fontSize: "18px",
+  button: {
+    backgroundColor: 'orange',  
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
   },
+
+  buttonText: {
+    color: 'black',  // Cor do texto
+    fontSize: 16,
+  },
+
 });
 
 export default styles;

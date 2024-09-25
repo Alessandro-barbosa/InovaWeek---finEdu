@@ -1,4 +1,4 @@
-import { Image, TextInput, View, TouchableOpacity, Text } from "react-native";
+import { Image, TextInput, View, TouchableOpacity, Text, Button } from "react-native";
 import styles from "./styles";
 import { Link } from "@react-navigation/native";
 import { LinearGradient } from 'expo-linear-gradient';
@@ -25,16 +25,16 @@ export default function ResultPage(){
           <View>
             <View style={styles.resultadosStyle}>
                 <Image source={require("../../../assets/correctIcon.png")} style={styles.resultadoLogos}/>
-                <Text>Q.1 Certo</Text>
+                <Text>Questão 1 - Certo</Text>
             </View>
             <View style={styles.resultadosStyle}>
                 <Image source={require("../../../assets/wrongIcon.png")} style={styles.resultadoLogos}></Image>
-                <Text>Q.2 Errado</Text>
+                <Text>Questão 2 - Errado</Text>
             </View>
           </View>
           <View style={styles.confirmar}>
-            <TouchableOpacity onPress={() => navigation.navigate('HomePage')}>
-                <Text style={styles.buttonText}>Confirmar</Text>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('HomePage')}>
+              <Text style={styles.buttonText}>Página principal</Text>
             </TouchableOpacity>
           </View>
       </View>

@@ -15,8 +15,7 @@ export default function HomePage() {
       <View style={styles.containerTop}>
         <Image source={require("../../../assets/logo.png")} style={styles.logo}/>
       </View>
-      <View style={styles.containerDown}>
-        
+      <View style={styles.containerDown}>        
           <View style={styles.miniCotainer1}>
             <Image source={require("../../../assets/teaching.png")} style={styles.icones}/>
             <View>
@@ -40,7 +39,6 @@ export default function HomePage() {
           </View>
         </View>
         </Link>
-
       </View>
     </View>
   );
